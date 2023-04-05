@@ -67,8 +67,8 @@ footer {
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    /* align-items: center; */
 }
 
 .contact-section {
@@ -84,6 +84,7 @@ footer {
 .contact-section p {
     font-size: 16px;
     margin-bottom: 20px;
+    text-align: left;
 }
 
 .contact-section input[type="text"],
@@ -140,11 +141,13 @@ footer {
     height: 200px;
     object-fit: cover;
     margin-right: 20px;
+    border: 5px solid black;
 }
 
 .team-member-details {
     display: flex;
     flex-direction: column;
+    width: 200px;
 }
 
 .team-member-name {
@@ -183,6 +186,9 @@ a {
     border: none;
     padding: 0;
     margin: 0;
+    /* line-height: 2px; */
+    /* text-align: center; */
+    display: flex;
 }
 
 .team-member-contact li:first-child {
@@ -192,6 +198,8 @@ a {
 .team-member-contact img {
     width: 20px;
     height: 20px;
+    margin-right: 5px;
+    border: 0;
 }
 
 @media (max-width: 768px) {
@@ -384,6 +392,8 @@ ul {
     padding: 10px;
     margin: 5px;
     text-align: center;
+    background-color: grey;
+    border-radius: 5px;
 }
 
 h3 {
@@ -410,7 +420,6 @@ h3 {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    height: 300px;
 }
 
 .item {
@@ -471,7 +480,7 @@ h3 {
     height: 425px;
     position: relative;
     margin: auto;
-    overflow: hidden;
+    overflow-y: hidden;
 }
 
 .animate-plane {
@@ -499,8 +508,8 @@ h3 {
 .fade-in {
     opacity: 0;
     animation-name: fade-in;
-    animation-duration: 1s;
-    animation-delay: 1s;
+    animation-duration: 0.5s;
+    animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 
@@ -564,7 +573,7 @@ h3 {
     flex-wrap: wrap;
     align-content: center;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .team-column {
@@ -598,4 +607,30 @@ h3 {
     background-repeat: no-repeat;
     background-size: auto 150%;
     background-position: right;
+}
+
+#body-container {
+    width: 90%;
+    margin: auto;
+    background-color: rgb(63, 63, 59);
+    padding-top: 30px;
+    /* position: relative; */
+    /* top: -26px; */
+}
+
+.column img {
+    width: 100%;
+}
+
+.footer-container {
+    margin-left: 5%;
+}
+
+.team-member li {
+    margin-left: -50px;
+}
+
+a.jiggle:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 1s ease-in-out;
 }
