@@ -620,6 +620,7 @@ h3 {
 
 .column img {
     width: 100%;
+    max-width: 150px;
 }
 
 .footer-container {
@@ -632,5 +633,5 @@ h3 {
 
 a.jiggle:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    transition: box-shadow 1s ease-in-out;
+    transition: box-shadow 0.5s ease-in-out;
 }
