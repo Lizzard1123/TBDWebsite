@@ -19,7 +19,7 @@ header {
     /* Add padding to header */
     border-bottom: 10px solid black;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
     align-content: center;
 }
@@ -39,8 +39,9 @@ nav ul {
 }
 
 nav li {
-    margin-right: 20px;
+    /* margin-right: 20px; */
     /* Add margin between list items */
+    font-size: min(4vw, 30px);
 }
 
 nav a {
@@ -226,17 +227,20 @@ h2 {
 .plane {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .plane img {
-    width: 50%;
-    max-width: 500px;
+    width: 95%;
+    max-width: 430px;
     height: auto;
+    border: 5px solid black;
 }
 
 .plane-details {
-    width: 50%;
+    width: 360px;
     padding-left: 40px;
 }
 
@@ -277,6 +281,7 @@ h2 {
     position: relative;
     height: 400px;
     overflow: hidden;
+    border: 5px solid black;
 }
 
 .slideshow img {
@@ -315,7 +320,7 @@ h2 {
 /* future prototypes */
 
 .future {
-    padding: 50px;
+    /* padding: 50px; */
 }
 
 .future p {
@@ -324,17 +329,21 @@ h2 {
 
 .plane-showcase {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .plane-card {
-    width: calc(50% - 40px);
+    width: calc(100% - 40px);
+    max-width: 300px;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     padding: 20px;
-    margin: 20px;
+    margin-bottom: 20px;
+    /* color: black; */
 }
 
 .plane-card img {
@@ -346,6 +355,8 @@ h2 {
 .plane-card h3 {
     font-size: 24px;
     margin-bottom: 10px;
+    color: gray;
+    text-align: center;
 }
 
 .plane-card p {
@@ -359,7 +370,7 @@ h2 {
 /* about section */
 
 #about {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -376,7 +387,7 @@ p {
 }
 
 ul {
-    font-size: 18px;
+    /* font-size: .3em; */
     line-height: 1.5;
     margin-left: 20px;
 }
@@ -385,10 +396,15 @@ ul {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
 }
 
 .column {
-    width: 30%;
+    width: max(20%, 100px);
+    height: 325px;
     padding: 10px;
     margin: 5px;
     text-align: center;
@@ -537,23 +553,28 @@ h3 {
 
 .person {
     display: flex;
-    align-items: center;
     margin-top: 40px;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .person img {
-    width: 200px;
-    height: 200px;
+    width: 142px;
+    height: 207px;
     border-radius: 50%;
-    margin-right: 40px;
+    /* margin-right: max(10vw, 40px); */
 }
 
 .quote {
     flex-grow: 1;
+    text-align: center;
+    width: min(40vw, 500px);
 }
 
 .quote p {
     text-align: left;
+    width: 40vw;
     font-size: 24px;
     font-style: italic;
     line-height: 1.5;
@@ -584,8 +605,12 @@ h3 {
     font-size: 24px;
     font-style: italic;
     line-height: 1.5;
+    text-align: center;
     margin-bottom: 10px;
+    width: 100%;
 }
+
+p {}
 
 .hero {
     width: 250px;
@@ -612,9 +637,10 @@ h3 {
 #body-container {
     width: 90%;
     margin: auto;
-    background-color: rgb(63, 63, 59);
+    background-color: rgb(63 63 59);
     padding-top: 30px;
     /* position: relative; */
+    overflow: hidden;
     /* top: -26px; */
 }
 
@@ -625,6 +651,7 @@ h3 {
 
 .footer-container {
     margin-left: 5%;
+    width: 90%;
 }
 
 .team-member li {
@@ -634,4 +661,13 @@ h3 {
 a.jiggle:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transition: box-shadow 0.5s ease-in-out;
+}
+
+.social-section h3 {
+    text-align: right;
+    padding-bottom: 5px;
+}
+
+#centerer {
+    display: flex;
 }

@@ -8,7 +8,6 @@
     <link rel="icon" type="image/x-icon" href="src/img/tbd.ico">
     <link rel="stylesheet" href="src/style.css">
 </head>
-<script src="src/script.js"></script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q6D96L25Y4"></script>
 <script>
@@ -87,11 +86,12 @@
 
             <h2>Current Solutions</h2>
             <p>Here is some information about current solutions, with images of scooper planes:</p>
-            <div class="plane-container">
-                <img src="src/img/canadairDropping.jpeg" alt="PlaneBack" class="planeBackground">
-                <img src="src/img/justCanadiar.png" alt="Plane" class="animate-plane">
+            <div id="centerer">
+                <div class="plane-container">
+                    <img src="src/img/canadairDropping.jpeg" alt="PlaneBack" class="planeBackground">
+                    <img src="src/img/justCanadiar.png" alt="Plane" class="animate-plane">
+                </div>
             </div>
-
 
             <h2>Problems with Current Solutions</h2>
             <p>Here is some information about the problems with current solutions:</p>
@@ -126,13 +126,13 @@
             </div>
         </div>
         <section class="services">
-            <h2>Our Prototype Plane</h2>
+            <h2>Our Current Prototype Plane</h2>
             <div class="plane">
                 <img src="src/img/mk0.5cad.png" alt="Our Prototype Plane">
                 <div class="plane-details">
                     <h3>Overview</h3>
-                    <p>Our first prototype plane is designed to be a low-cost, lightweight aircraft for research and development purposes. We have shifted our current focus to a group of smaller planes that we can build quickly to test fast and in parallel
-                        with the controls software development. </p>
+                    <p>Our prototype plane is designed to be a low-cost, lightweight aircraft for research and development purposes. We have shifted our current focus to a group of smaller planes that we can build quickly to test fast and in parallel with
+                        the controls software development. </p>
                     <h3>Features</h3>
                     <ul>
                         <li>Lightweight carbon fiber airframe</li>
@@ -156,14 +156,14 @@
                 <p>Our startup company plans to prototype two future planes that aim to solve the following</p>
                 <div class="plane-showcase">
                     <div class="plane-card">
-                        <img src="future-plane1.jpg" alt="Future Plane 1">
                         <h3>MK 1</h3>
-                        <p>what this thing does</p>
+                        <img src="src/img/Mk1.JPG" alt="Future Plane 1">
+                        <p>Our first home-built plane, was designed to carry 5 gallons of water. Our plan is to rebuild this model with the new things we have learned building the smaller planes</p>
                     </div>
                     <div class="plane-card">
-                        <img src="future-plane2.jpg" alt="Future Plane 2">
-                        <h3>Future Plane 2</h3>
-                        <p>what this thing does</p>
+                        <h3>End Goal</h3>
+                        <img src="src/img/firefighting.png" alt="Future Plane 2">
+                        <p>Our imagined goal is to have a plane that can carry 100-150G of water. To get to this point we have to start small and emphasize safety and reliability.</p>
                     </div>
                 </div>
             </section>
@@ -177,8 +177,8 @@
                         <div class="team-member-details">
                             <div class="team-member-name">Cayden Shaffer</div>
                             <div class="team-member-role">Aerospace Engineering</div>
-                            <div class="team-member-experience"></div>
-                            <div class="team-member-passion"></div>
+                            <div class="team-member-experience">Works on designing and building the drones</div>
+                            <div class="team-member-passion">Excited to learn how to manufacture and design fixed wing drones</div>
                             <ul class="team-member-contact">
                                 <li>
                                     <a class="jiggle" href="https://www.linkedin.com/in/cayden-shaffer/" target="_blank"><img src="src/img/linkedin.png" alt="Linkedin">Connect with Cayden!</a>
@@ -209,8 +209,8 @@
                         <div class="team-member-details">
                             <div class="team-member-name">Karsten Caillet</div>
                             <div class="team-member-role">Aerospace Engineering</div>
-                            <div class="team-member-experience"></div>
-                            <div class="team-member-passion"></div>
+                            <div class="team-member-experience">Works on simulating and designing the drones</div>
+                            <div class="team-member-passion">Excited to learn how to run a business</div>
                             <ul class="team-member-contact">
                                 <li>
                                     <a class="jiggle" href="https://www.linkedin.com/in/karsten-caillet-544b961a5/" target="_blank"><img src="src/img/linkedin.png" alt="Linkedin">Connect with Karsten!</a>
@@ -272,6 +272,7 @@
         </div>
     </footer>
 </body>
+<script src="src/script.js"></script>
 
 </html>
 
