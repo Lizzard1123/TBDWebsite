@@ -25,11 +25,10 @@
     <header class="gradient-background">
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#solution">Solution</a></li>
+                <li><a href="#progress">Progress</a></li>
+                <li><a href="#team-members">Contact</a></li>
             </ul>
         </nav>
         <div class="hero">
@@ -41,8 +40,8 @@
     <div id="body-container">
 
         <div id="about">
-            <h2>Why Wildfires are a Problem</h2>
-            <p>Here is some information about the problem of wildfires, perhaps with some images:</p>
+            <h2>Wildfires are a Problem</h2>
+            <p>Just look at what is happening across the globe</p>
             <div class="collage">
                 <div class="item">
                     <img src="src/img/collage/washingtonfire.png" alt="Image 1">
@@ -77,15 +76,15 @@
                 <div class="person">
                     <img src="src/img/Colonel.png" alt="Portrait of person">
                     <div class="quote">
-                        <p>"Wildfires are a major threat to our environment and communities. We need innovative solutions to prevent and mitigate these disasters."</p>
-                        <p class="author">- Colonel John Doe, Firefighter</p>
+                        <p>"The 2022 wildfire season has pushed our capabilities to their limits"</p>
+                        <p class="author">- Colonel Pierre Schaller, French Firefighting Expert and Ambassador</p>
                     </div>
                 </div>
             </section>
 
 
             <h2>Current Solutions</h2>
-            <p>Here is some information about current solutions, with images of scooper planes:</p>
+            <p>In this market, Canadair makes the most reliable and widespread solution. Picutured below is a CL-415 dropping 1,600 Gallons of water.</p>
             <div id="centerer">
                 <div class="plane-container">
                     <img src="src/img/canadairDropping.jpeg" alt="PlaneBack" class="planeBackground">
@@ -94,14 +93,16 @@
             </div>
 
             <h2>Problems with Current Solutions</h2>
-            <p>Here is some information about the problems with current solutions:</p>
-            <ul>
-                <li>Problem 1</li>
-                <li>Problem 2</li>
-                <li>Problem 3</li>
+            <p></p>
+            <ul id="problems">
+                <li>Scarce Availability</li>
+                <li>Expensive to buy and operate</li>
+                <li>Difficult to operate</li>
+                <li>Slow response time</li>
+                <li>Dangerous to fly at night</li>
             </ul>
 
-            <h2>Our Solution</h2>
+            <h2 id="solution">Our Solution</h2>
             <div class="solution-columns">
                 <div class="column">
                     <img src="src/img/stopwatch-svgrepo-com.svg">
@@ -116,7 +117,7 @@
                 <div class="column">
                     <img src="src/img/trending-up-svgrepo-com.svg">
                     <h3>Increased Coverage</h3>
-                    <p>With a shorter scooping path, the drones will be able to pick up water close to the fire.</p>
+                    <p>With a shorter scooping path, the drones will be able to pick up water closer to the fire compared to traditional methods.</p>
                 </div>
                 <div class="column">
                     <img src="src/img/biceps-of-a-man-svgrepo-com.svg">
@@ -126,7 +127,7 @@
             </div>
         </div>
         <section class="services">
-            <h2>Our Current Prototype Plane</h2>
+            <h2 id="progress">Our Current Prototype Plane</h2>
             <div class="plane">
                 <img src="src/img/mk0.5cad.png" alt="Our Prototype Plane">
                 <div class="plane-details">
@@ -138,7 +139,7 @@
                         <li>Lightweight carbon fiber airframe</li>
                         <li>3.3kg of thrust</li>
                         <li>20 minute flight time</li>
-                        <li>estimated 1km range</li>
+                        <li>~$175 to build</li>
                     </ul>
                 </div>
             </div>
@@ -152,8 +153,8 @@
                 </div>
             </div>
             <section class="future">
-                <h2>Our Future Planes</h2>
-                <p>Our startup company plans to prototype two future planes that aim to solve the following</p>
+                <h2>Our Future Plans</h2>
+                <p>Our company plans to work our way up to designing and building a full scale wildfire drone</p>
                 <div class="plane-showcase">
                     <div class="plane-card">
                         <h3>MK 1</h3>
@@ -163,7 +164,7 @@
                     <div class="plane-card">
                         <h3>End Goal</h3>
                         <img src="src/img/firefighting.png" alt="Future Plane 2">
-                        <p>Our imagined goal is to have a plane that can carry 100-150G of water. To get to this point we have to start small and emphasize safety and reliability.</p>
+                        <p>Our imagined goal is to have a plane that can carry 100-150 gallons of water. To get to this point we have to start small and emphasize safety and reliability.</p>
                     </div>
                 </div>
             </section>
@@ -224,8 +225,8 @@
                         <div class="team-member-details">
                             <div class="team-member-name">Benjamin Jiras</div>
                             <div class="team-member-role">Computer Science</div>
-                            <div class="team-member-experience"></div>
-                            <div class="team-member-passion"></div>
+                            <div class="team-member-experience">Works on managing the team and higher level CS problems</div>
+                            <div class="team-member-passion">Excited to be with a fun group of people working hard on a cool project</div>
                             <ul class="team-member-contact">
                                 <li>
                                     <a class="jiggle" href="https://www.linkedin.com/in/benjaminjiras/" target="_blank"><img src="src/img/linkedin.png" alt="Linkedin">Connect with Benjamin!</a>
@@ -275,109 +276,3 @@
 <script src="src/script.js"></script>
 
 </html>
-
-
-<!--
-
-
-    <section id="comp-services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="comp-services">
-                <div class="comp-service">
-                    <i class="fas fa-code"></i>
-                    <h3>Web Development</h3>
-                    <p>Description of your web development services</p>
-                </div>
-                <div class="comp-service">
-                    <i class="fas fa-mobile-alt"></i>
-                    <h3>Mobile App Development</h3>
-                    <p>Description of your mobile app development services</p>
-                </div>
-                <div class="comp-service">
-                    <i class="fas fa-shopping-cart"></i>
-                    <h3>E-commerce Solutions</h3>
-                    <p>Description of your e-commerce solutions</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>Some information about your startup company</p>
-        </div>
-    </section>
-
-    <section id="portfolio">
-        <div class="container">
-            <h2>Our Portfolio</h2>
-            <div class="portfolio-items">
-                <div class="portfolio-item">
-                    <img src="portfolio-item-1.jpg" alt="Portfolio Item 1">
-                    <h3>Portfolio Item 1</h3>
-                    <p>Description of your portfolio item</p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="portfolio-item-2.jpg" alt="Portfolio Item 2">
-                    <h3>Portfolio Item 2</h3>
-                    <p>Description of your portfolio item</p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="portfolio-item-3.jpg" alt="Portfolio Item 3">
-                    <h3>Portfolio Item 3</h3>
-                    <p>Description of your portfolio item</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-<section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>Get in touch with us to start your project today</p>
-            <form action="#">
-                <input type="text" name="name" placeholder="Name">
-                <input type="email" name="email" placeholder="Email">
-                <textarea name="message" placeholder="Message"></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-
-    <section id="team">
-        <h2>Meet Our Team</h2>
-        <div class="team-member">
-            <img src="img/team-member-1.jpg" alt="Team Member 1">
-            <h3>John Smith</h3>
-            <p class="role">Co-Founder / CEO</p>
-            <p class="experience">10+ years of experience in entrepreneurship and management.</p>
-            <p class="passion">"I'm passionate about building innovative products that solve real-world problems and create value for our customers."</p>
-        </div>
-        <div class="team-member">
-            <img src="img/team-member-2.jpg" alt="Team Member 2">
-            <h3>Jane Doe</h3>
-            <p class="role">Co-Founder / CTO</p>
-            <p class="experience">8+ years of experience in software engineering and development.</p>
-            <p class="passion">"I'm passionate about using technology to create impactful solutions and change the world for the better."</p>
-        </div>
-        <div class="team-member">
-            <img src="img/team-member-3.jpg" alt="Team Member 3">
-            <h3>David Lee</h3>
-            <p class="role">Marketing Director</p>
-            <p class="experience">5+ years of experience in digital marketing and brand strategy.</p>
-            <p class="passion">"I'm passionate about telling compelling stories and connecting with customers through creative marketing campaigns."</p>
-        </div>
-        <div class="team-member">
-            <img src="img/team-member-4.jpg" alt="Team Member 4">
-            <h3>Amy Chen</h3>
-            <p class="role">Lead Designer</p>
-            <p class="experience">7+ years of experience in graphic design and user experience.</p>
-            <p class="passion">"I'm passionate about crafting beautiful and intuitive designs that enhance the user experience and drive engagement."</p>
-        </div>
-    </section>
--->
