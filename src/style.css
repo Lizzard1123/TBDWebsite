@@ -329,7 +329,7 @@ h2 {
 
 .plane-showcase {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 20px;
     flex-wrap: wrap;
     flex-direction: row;
@@ -394,7 +394,7 @@ ul {
 
 .solution-columns {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 40px;
     flex-wrap: wrap;
     flex-direction: row;
@@ -569,12 +569,12 @@ h3 {
 .quote {
     flex-grow: 1;
     text-align: center;
-    width: min(40vw, 500px);
+    width: min(50vw, 500px);
 }
 
 .quote p {
     text-align: left;
-    width: 40vw;
+    width: 50vw;
     font-size: 24px;
     font-style: italic;
     line-height: 1.5;
